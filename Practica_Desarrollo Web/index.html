@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- File: myapp/templates/myapp/index.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdstrike</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <div class="cont-logo">
+            <img src="{% static 'img/nuevo.png' %}" alt="Crowdstrike Logo" class="logo"> 
+        </div>
+        <h2><em>"We stop breaches"</em></h2>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}" title="Pagina principal">Inicio</a></li>
+                <li><a href="{% url 'certificaciones' %}" title="Pagina certificaciones">Certificaciones</a></li>
+                <li><a href="{% url 'servicios' %}" title="Pagina servicios">Servicios</a></li>
+                <li><a href="{% url 'referencias' %}" title="Pagina referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="historia">
+            <div class="hist-container"> 
+                <i class="fas fa-shield-alt"></i>
+                <h1>Historia</h1>
+
+                <p>
+                    CrowdStrike fue fundada en 2011 por George Kurtz, Dmitri Alperovitch y Gregg Marston. Desde su inicio, 
+                    la empresa se ha centrado en proporcionar soluciones de ciberseguridad avanzadas, especialmente en el ámbito 
+                    de la protección de endpoints y la detección de amenazas. En 2013, CrowdStrike lanzó su plataforma Falcon, 
+                    que utiliza inteligencia artificial y aprendizaje automático para detectar y prevenir amenazas cibernéticas.    
+            
+                <p>
+                   CrowdStrike Holdings, Inc. es una empresa estadounidense de tecnología de ciberseguridad con sede en 
+                   Austin, Texas. Proporciona protección de cargas de trabajo en la nube y seguridad de terminales, 
+                   inteligencia contra amenazas y servicios de respuesta a ciberataques. La compañía ha estado involucrada
+                   en investigaciones de varios ataques cibernéticos de alto perfil, incluido el ciberataque a Sony Pictures
+                   en 2014, los ciberataques al Comité Nacional Demócrata (DNC) de 2015-16 y la filtración de correos electrónicos de 2016 que involucra al DNC.
+            
+                <br>
+                   CrowdStrike es una empresa de ciberseguridad que proporciona servicios y productos para la protección contra 
+                   amenazas cibernéticas, fue fundada en 2011 y desde entonces es conocida por su plataforma Falcon, que utiliza 
+                   inteligencia artificial y aprendizaje automático para detectar, prevenir y responder a amenazas en tiempo real.
+                   Dentro de los principales servicios que ofrece la empresa está el análisis a los reportes de amenazas cibernéticas, 
+                   protección de datos en la nube y además promete salvaguardar endpoints, o sea dispositivos finales como computadoras
+                   y servidores, lo que ayuda a prevenir ataques y malware.
+               </p>
+            </div>
+            <!-- <div class="imagen"> 
+                <img src="{% static 'img/crowdstrike.jpg' %}" alt="CrowdStrike">
+            </div> -->
+
+            <div class="img">
+                <img src="{% static 'img/bug.jpg' %}" alt="bug" class="img-bug">
+            </div>
+
+        </section>
+
+        <div class="ubicacion">
+            <h1>Ubicación</h1>
+            <p>CrowdStrike tiene su sede en Austin, Texas, Estados Unidos. La empresa también cuenta con oficinas en varias ciudades importantes de todo el mundo, incluyendo San Francisco, Nueva York, Londres, París, Frankfurt, Singapur y Tokio.</p
+                <div class="mapa">
+                  <h2><em>Mapa de Ubicación</em></h2>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.825000738941!2d-97.7421657258294!3d30.27056700782425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5841aba8ea1%3A0x1476c8ee167c6231!2sCrowdStrike!5e0!3m2!1ses-419!2smx!4v1752457273236!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+                </div>
+        </div>
+
+        <br>
+        <div class="contenedor">
+            <div class="card">
+                <h2><strong>Misión</strong></h2>
+                <p>Nuestra misión es detener las violaciones aprovechando el poder de la nube para ofrecer soluciones
+                de ciberseguridad de proxima generación. Esta misión nos guía en el desarrollo de tecnologias de vanguardia
+                que protejan las cargas de trabajo en la nube, las identidades y los datos de los ataques cibernéticos.
+                En el futuro, nuestra misión nos llevará a explorar nuevas vías de defensa de ciberseguridad y expandir 
+                nuestro alcance a nivel mundial.
+                </p>
+            </div>
+            <div class="card">
+                <h2><strong>Visión</strong></h2>
+                <p>
+                Nuestra visión en CrowdStrike es revolucionar la ciberseguridad al proporcionar proteccion y visibilidad incomparables
+                para nuestros clientes. Imaginamos un futuro donde las organizaciones pueden operar de forma segura en el panorama 
+                digital sin temor a las amenazas cibernéticas. Para lograr esta visión. continuaremos innovando, colaborando con socios
+                de la industria y permaneceremos a la vanguardia de las tendencias de ciberseguridad.
+                </p>
+            </div>
+            <div class="valores">
+                <h2><strong>Valores</strong></h2>
+                <ul>
+                    <li><strong>Integridad:</strong> Estamos comprometidos con la honestidad, la transparencia y el comportamiento ético en todos los aspectos de nuestro negocio.</li>
+                    <li><strong>Excelencia:</strong> Nos esforzamos por la excelencia en todo lo que hacemos, desde el desarrollo de productos hasta la atención al cliente, para garantizar el más alto nivel de calidad y rendimiento.</li>
+                    <li><strong>Inovación:</strong> Adoptamos la innovación y buscamos continuamente nuevas formas de mejorar nuestra tecnología y servicios para evitar evolucionar las amenazas cibernéticas.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-_aL-RTgIDY?si=AQb9ls9i2vc0oSHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <br>
+
+        <div class="serv">
+
+            <h1>Descubre nuestros servicios</h1>
+            
+        </div>
+
+        <br>
+
+    <div class="servicios">
+        <h2>Menu de Servicios</h2>
+        <div class="serv-container">
+            <div class="serv-1">
+                <i class="fas fa-shield-virus"></i>
+                <h3>Protección de Endpoints</h3>
+                <p>Ofrecemos soluciones avanzadas para proteger dispositivos finales contra amenazas cibernéticas.</p>
+            </div>
+            <div class="serv-2">
+                <i class="fas fa-search"></i>
+                <h3>Detección y Respuesta a Amenazas</h3>
+                <p>Nuestros servicios de detección y respuesta a amenazas ayudan a identificar y mitigar ataques en tiempo real.</p>
+            </div>
+            <div class="serv-3">
+                <i class="fas fa-cloud"></i>
+                <h3>Seguridad en la Nube</h3>
+                <p>Proporcionamos soluciones de seguridad para proteger datos y aplicaciones en entornos de nube.</p>
+            </div>
+            <div class="serv-4">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Inteligencia de Amenazas</h3>
+                <p>Nuestra inteligencia de amenazas proporciona información valiosa para anticipar y prevenir ataques.</p>
+            </div>
+            <div class="serv-5">
+                <i class="fas fa-headset"></i>
+                <h3>Servicios de Respuesta a Incidentes</h3>
+                <p>Ofrecemos servicios de respuesta a incidentes para ayudar a las organizaciones a recuperarse rápidamente de ataques cibernéticos.</p>
+            </div>
+    </main>
+
+<!-- Botón Soporte Técnico -->
+<div class="soporte-flotante">
+    <button class="soporte-btn" id="toggleSoporte">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+    <div class="soporte-info" id="soporteInfo">
+        <aside class="soporte-aside">
+            <h2><strong>Soporte Técnico</strong></h2>
+            <p>¿Requieres ayuda con el área de ciberseguridad en tu empresa?</p>
+            <p><strong>Agenda ahora una conferencia con nuestro equipo de soporte</strong></p>
+            <ul>
+                <li>📧 Email: <a href="mailto:support@crowdstrike.com">support@crowdstrike.com</a></li>
+                <li>📞 Tel: +1 888-512-8906</li>
+                <li>🌐 <a href="https://support.crowdstrike.com">Portal de Soporte</a></li>
+                <li>🕒 Disponible 24/7</li>
+            </ul>
+        </aside>
+    </div>
+</div>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <div class="social">
+            <a href="https://www.facebook.com/CrowdStrike" class="social-icon"><i class="fab fa-meta"></i></a>
+            <a href="https://youtube.com/@crowdstrike?si=6KFGfFfMirZ1RzxS" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/crowdstrike/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/crowdstrike?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+        
+        </div>
+        <p>&copy; Todos los derechos reservados 2025.</p>
+    </footer>
+    <script src="{% static 'js/inicio.js' %}"></script>
+</body>
+</html>

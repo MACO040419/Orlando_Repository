@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdstrike</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="cont-logo">
+            <img src="{% static 'img/nuevo.png' %}" alt="Crowdstrike Logo" class="logo"> 
+        </div>
+        <h2><em>"We stop breaches"</em></h2>
+        <nav>
+            <ul>
+                <li><a href={% url 'index' %} title="Pagina principal">Inicio</a></li>
+                <li><a href={% url 'certificaciones' %} title="Pagina certificaciones">Certificaciones</a></li>
+                <li><a href={% url 'servicios' %} title="Pagina servicios">Servicios</a></li>
+                <li><a href={% url 'referencias' %} title="Pagina referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    <div class="certificaciones">
+        <h2>Nuestras Certificaciones</h2>
+        <div class="cert-container">
+            <div class="cert-1">
+                <div class="cert-header">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>PCI DSS v4</h3>
+                </div>
+                    
+                <div class="cert-text">
+                  <p>Cumplimiento con el estándares de seguridad de datos de la industria de tarjetas de pago.</p>
+                </div>
+            </div>
+
+            <div class="cert-1">
+                <div class="cert-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>SOC 2</h3>
+                </div>
+                    
+                <div class="cert-text">
+                  <p>Cumplimiento de los estándares de seguridad, disponibilidad, integridad del procesamiento, confidencialidad y privacidad.</p>
+                </div>
+            </div>
+
+            <div class="cert-1">
+                <div class="cert-header">
+                    <i class="fas fa-user shield"></i>
+                    <h3>FedRAMP</h3>
+                </div>
+                <div class="cert-text">
+                  <p>Falcon esta autorizada por este programa deferal de gestión de riesgos y autorizaciones de EE.UU y ha alcanzado el estatus de "High-Impact Level Ready".</p>
+                </div>
+            </div>
+
+            <div class="cert-1">
+                <div class="cert-header">
+                  <i class="fas fa-cloud"></i>
+                  <h3>CSA-STAR</h3>
+                </div>
+                <div class="cert-text">
+                  <p>Falcon alcanza los niveles 1 y 2 del registro público, demostrando la implementación de la versión 4.0 de Cloud Controls Matrix CCM, atraves de una auditoría externa.</p>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+        <div class="cert-container2">
+            <h2>Programa de Certificaciones Falcon</h2>
+            <p>Nosotros convertimos y capacitamos a el personal de TI, hecha un vistazo a nuestras certificaciones oficiales de crowdstrike para que ti empresa este protegida y certificada ante los últimos estándares de ciberseguridad.</p>
+        </div>
+        
+    <div class="card">
+        <h3>Certificaciones</h3>
+        <ul>
+            <li><strong>PCI DSS v4</strong></li> Cumplimiento con el estándares de seguridad de datos de la industria de tarjetas de pago.
+            <li><strong>SOC 2</strong></li>Cumplimiento de los estándares de seguridad, disponibilidad, integridad del procesamiento, confidencialidad y privacidad.
+            <li><strong>FedRAMP (Federal Risk and Authorization Management Program)</strong></li> Falcon esta autorizada por este programa deferal de gestión de riesgos y autorizaciones de EE.UU y ha alcanzado el estatus de "High-Impact Level Ready"
+            <li><strong>CSA-STAR (Cloud Security Alliance - Security, Trust, Assurance, and Risk)</strong></li> Falcon alcanza los niveles 1 y 2 del registro público, demostrando la implementación de la versión 4.0 de Cloud Controls Matrix CCM, atraves de una auditoría externa.
+        </ul>
+        
+    </div>
+
+    </main>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <div class="social">
+            <a href="https://www.facebook.com/CrowdStrike" class="social-icon"><i class="fab fa-meta"></i></a>
+            <a href="https://youtube.com/@crowdstrike?si=6KFGfFfMirZ1RzxS" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/crowdstrike/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/crowdstrike?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+        
+        </div>
+        <p>&copy; Todos los derechos reservados 2025.</p>
+
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const certitems = document.querySelectorAll('.cert-1');
+            certitems.forEach(item => {
+                cons header = item.querySelector('.cert-header');
+                header.addEventListener('click', function() {
+                    certitems.forEach(i => {
+                        if (i !== item) {
+                            i.classList.remove('active');
+                        }
+                    });
+            });
+            item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

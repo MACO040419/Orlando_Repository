@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdstrike</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="cont-logo">
+            <img src="{% static 'img/nuevo.png' %}" alt="Crowdstrike Logo" class="logo"> 
+        </div>
+        <h2><em>"We stop breaches"</em></h2>
+        
+        <nav>
+            <ul>
+                <li><a href={% url 'index' %} title="Pagina principal">Inicio</a></li>
+                <li><a href={% url 'certificaciones' %} title="Pagina certificaciones">Certificaciones</a></li>
+                <li><a href={% url 'servicios' %} title="Pagina servicios">Servicios</a></li>
+                <li><a href={% url 'referencias' %} title="Pagina referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="card">
+            <h2>Referencias de Clientes</h2>
+            <p>Nuetros clientes mas importantes de impacto global, tenemos casos y referencias de nuestros servicios</p>
+        </div>
+        <div class="refContenedor">
+            <div class="card">
+                <img src="{% static 'img/intel-logo.png' %}" alt="Logo de intel">
+                <br>
+                <br>
+                <li><strong>Intel</strong></li>"Resalta de beneficios inmediatos con un moderno stack de seguridad"
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/Target-logo.png' %}" alt="Logo de Target">
+                <br>
+                <br>
+                <li><strong>Target</strong></li>"Buen socio estrategico de ciberseguridad"
+            </div>
+
+            <div class="card">
+                <img src="{% static 'img/amazon_logo.png' %} alt="Logo de Amazon">
+                <br>
+                <br>
+                <li><strong>Amazon</strong></li>"Protege nuestros datos y cargas de trabajo en la nube"
+            </div>
+
+            <div class="card">
+                <img src="img/salesforce-logo.webp" alt="Logo de Salesforce">
+                <br>
+                <br>
+                <li><strong>Salesforce</strong></li>"colaboración para combatir amenazas avanzadas"
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <div class="social">
+            <a href="https://www.facebook.com/CrowdStrike" class="social-icon"><i class="fab fa-meta"></i></a>
+            <a href="https://youtube.com/@crowdstrike?si=6KFGfFfMirZ1RzxS" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/crowdstrike/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/crowdstrike?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+        
+        </div>
+        <p>&copy; Todos los derechos reservados 2025.</p>
+    </footer>
+</body>
+</html>

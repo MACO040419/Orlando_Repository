@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdstrike</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="cont-logo">
+            <img src="{% static 'img/nuevo.png' %}" alt="Crowdstrike Logo" class="logo">
+        </div>
+        <h2><em>"We stop breaches"</em></h2>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}" title="Pagina principal">Inicio</a></li>
+                <li><a href="{% url 'certificaciones' %}" title="Pagina certificaciones">Certificaciones</a></li>
+                <li><a href="{% url 'servicios' %}" title="Pagina servicios">Servicios</a></li>
+                <li><a href="{% url 'referencias' %}" title="Pagina referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cont-servicios">
+            <h1>Nuestros Servicios</h1>
+            <p>En CrowdStrike, ofrecemos servicios de fama mundial para prepararse, responder y recuperarse ante las brechas de seguridad. Nuestra orientación práctica incluye respuesta 24/7/365 de un equipo que nunca duerme.</p>
+        </section>
+
+        
+        <section class="stats">
+            <div class="stat-card">
+                <i class="fas fa-shield-alt"></i>
+                <div class="number">99%</div>
+                <div class="label">Prevención de ataques</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-globe"></i>
+                <div class="number">176+</div>
+                <div class="label">Países protegidos</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div class="number">23K+</div>
+                <div class="label">Clientes globales</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-bug"></i>
+                <div class="number">1.5B</div>
+                <div class="label">Amenazas detenidas diariamente</div>
+            </div>
+        </section>
+
+        <section class="servicios-container">
+            <div class="servicio">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Respuesta a incidentes</h3>
+                <p>Expulsa a los adversarios del entorno con rapidez y precisión para cerrar la brecha.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-users"></i>
+                <h3>Servicios de consultoría</h3>
+                <p>Realiza pruebas y ejercicios de los procesos de respuesta, prepárate para los requisitos de la SEC y eleva el nivel de madurez de tu programa de seguridad.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-cogs"></i>
+                <h3>Servicios de plataforma</h3>
+                <p>Los expertos de CrowdStrike implementan, configuran y ponen en pleno funcionamiento la plataforma Falcon.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Formación y educación</h3>
+                <p>Invierte en los conocimientos de tu equipo y domina la plataforma CrowdStrike Falcon® en CrowdStrike University.</p>
+            </div>
+        </section>
+
+        <section class="caracteristicas-servicios">
+            <h2>Características principales de los servicios profesionales de CrowdStrike</h2>
+            <div class=i"imgserv">
+                  <img src="{%static 'img/dark.png' %}" alt="Servicios de CrowdStrike" class="serv-img">
+            </div>
+            <h3>Respuesta a incidentes</h3>
+            <ul>
+                <li>
+                    <strong>Respuesta:</strong>
+                    <p>Expulsa a los adversarios del entorno con rapidez y precisión para cerrar la brecha. Contén, investiga y elimina la amenaza.</p>
+                </li>
+                <li>
+                    <strong>Reconstrucción y restauración:</strong>
+                    <p>Revierte los efectos de la intrusión devolviendo los sistemas vulnerados a su estado anterior y garantiza la captura forense.</p>
+                </li>
+                <li>
+                    <strong>Detección de compromisos:</strong>
+                    <p>Evaluaciones rápidas y exhaustivas para detectar brechas anteriores o actuales y minimizar los posibles daños.</p>
+                </li>
+            </ul>
+
+            <h3>Servicios de consultoría</h3>
+            <ul>
+                <li>
+                    <strong>Identidades y nube:</strong>
+                    <p>Pruebas y ejercicios de respuesta, preparación para requisitos regulatorios y refuerzo de la seguridad en la nube.</p>
+                </li>
+                <li>
+                    <strong>Equipo rojo:</strong>
+                    <p>Simulación de intrusiones realistas para calibrar el nivel de preparación y capacidades del equipo.</p>
+                </li>
+                <li>
+                    <strong>Refuerzo de entornos:</strong>
+                    <p>Identificación y abordaje proactivo de vulnerabilidades antes de que se produzca una brecha.</p>
+                </li>
+            </ul>
+
+            <h3>Servicios de plataforma</h3>
+            <ul>
+                <li>
+                    <strong>Acelera el tiempo de rentabilidad:</strong>
+                    <p>Implementación y configuración óptima de la plataforma Falcon para proteger tu entorno.</p>
+                </li>
+                <li>
+                    <strong>Mejora tus habilidades de seguridad:</strong>
+                    <p>Formación especializada para sacar el máximo partido a la plataforma Falcon y obtener resultados óptimos.</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="servimg">
+            <img src="{% static 'img/solutions.webp' %}" alt="Servicios de CrowdStrike" class="servicios-img">
+        </div>
+
+
+
+        <section class="contratar-servicio">
+            <h2>Contratar Servicio</h2>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="servicio">Tipo de servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="" disabled selected>Seleccione un servicio</option>
+                    <option value="Identidades y nube">Identidades y nube</option>
+                    <option value="Equipo rojo">Equipo rojo</option>
+                    <option value="Refuerzo de entornos">Refuerzo de entornos</option>
+                    <option value="Acelera el tiempo de rentabilidad de la inversión">Acelera el tiempo de rentabilidad de la inversión</option>
+                    <option value="Mejora tus habilidades de seguridad">Mejora tus habilidades de seguridad</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <div class="social">
+            <a href="https://www.facebook.com/CrowdStrike" class="social-icon"><i class="fab fa-meta"></i></a>
+            <a href="https://youtube.com/@crowdstrike?si=6KFGfFfMirZ1RzxS" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/crowdstrike/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/crowdstrike?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; Todos los derechos reservados 2025.</p>
+    </footer>
+    <script src="{% static 'js/servicios.js' %}"></script>
+</body>
+</html>
